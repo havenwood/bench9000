@@ -23,11 +23,7 @@ class MockCanvas
   public :resample_bilinear!
 
   def initialize
-    @pixels = Array.new(width * height, 0)
-
-    @pixels.size.times do |n|
-      @pixels[n] = 0x12345678
-    end
+    @pixels = Array.new(width * height, 0x12345678)
   end
 
   def width

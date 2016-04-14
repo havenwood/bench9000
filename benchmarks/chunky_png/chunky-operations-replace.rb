@@ -24,11 +24,7 @@ class MockCanvas
   public :compose!
 
   def initialize
-    @pixels = Array.new(width * height, 0)
-
-    @pixels.size.times do |n|
-      @pixels[n] = PIXEL
-    end
+    @pixels = Array.new(width * height, PIXEL)
   end
 
   def width
